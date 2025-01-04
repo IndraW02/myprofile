@@ -1012,26 +1012,16 @@ video {
 
 @keyframes goyang {
   0%, 100% {
-    transform: rotate(-10deg);
+    transform: rotate(-40deg);
   }
 
   50% {
-    transform: rotate(10deg);
+    transform: rotate(40deg);
   }
 }
 
 .animate-goyang {
   animation: goyang 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin {
-  animation: spin 1s linear infinite;
 }
 
 .touch-auto {
@@ -3058,6 +3048,10 @@ video {
     flex-direction: row;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:p-8 {
     padding: 2rem;
   }
@@ -3083,6 +3077,10 @@ video {
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:text-justify {
+    text-align: justify;
   }
 
   .md\:text-5xl {

@@ -10,10 +10,10 @@ module.exports = {
       keyframes: {
         goyang: {
           '0%, 100%': {
-            transform: 'rotate(-10deg)',
+            transform: 'rotate(-40deg)',
           },
           '50%': {
-            transform: 'rotate(10deg)',
+            transform: 'rotate(40deg)',
           },
         },
       },
