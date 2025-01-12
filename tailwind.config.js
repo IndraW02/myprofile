@@ -1,24 +1,27 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./**/*.{html,js}"],
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
-      animation: {
-        'spin-slow': 'spin 3s linear infinite',
-        'goyang': 'goyang 1s ease-in-out infinite',
+      container: {
+        center: true,
       },
-      keyframes: {
-        goyang: {
-          '0%, 100%': {
-            transform: 'rotate(-40deg)',
-          },
-          '50%': {
-            transform: 'rotate(40deg)',
-          },
-        },
+      fontFamily: {
+        Oswald: ["Oswald", "sans serif"],
+        Inter: ["Inter"],
+        Poppins: ["Poppins"],
+      },
+      backgroundImage: {
+        heroLight:
+          "url('https://preline.co/assets/svg/examples/polygon-bg-element.svg')",
+        heroDark:
+          "url('https://preline.co/assets/svg/examples-dark/polygon-bg-element.svg')",
+      },
+      colors: {
+        primary: "#b033fd",
       },
     },
   },
   plugins: [],
-}
-
+};
